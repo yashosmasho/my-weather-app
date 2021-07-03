@@ -12,7 +12,7 @@ let currentDay = document.querySelector("#current-day");
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday"
+    "Saturday",
   ];
 
   let day = days[now.getDay()];
@@ -58,6 +58,3 @@ function currentPosition(position) {
 function showPosition() {
   navigator.geolocation.getCurrentPosition(currentPosition);
 }
-
-let location = document.querySelector("#current-location");
-location.addEventListener("click", showPosition);
